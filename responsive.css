@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+  .box {
+    width: 200px;
+    height: 200px;
+  }
+
+  .box::before,
+  .box::after {
+    transform: rotateX(90deg) translateZ(100px);
+  }
+
+  .box::after {
+    transform: rotateX(90deg) translateZ(-150px);
+  }
+
+  .plane {
+    transform: rotateY(calc(90deg * var(--i))) translateZ(100px);
+  }
+}
